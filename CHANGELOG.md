@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.461 (2026-07-28)
+
+### PR [#2152](https://github.com/danielmiessler/Fabric/pull/2152) by [AUTHENSOR](https://github.com/AUTHENSOR): fix: shell-escape extension values to prevent command injection
+
+- **Fix:** Shell-escape extension values to prevent command injection in the extension executor, which previously ran commands via `sh -c` with unescaped, user-controlled values interpolated into the command string. All user-controlled values are now wrapped in single quotes with embedded-single-quote escaping prior to interpolation, ensuring the shell treats them as literal arguments. A regression test (`ShellInjectionBlocked`) has been added to verify that malicious input (e.g., `hello; touch /marker`) does not execute unintended shell commands.
+
 ## v1.4.460 (2026-07-24)
 
 ### PR [#2166](https://github.com/danielmiessler/Fabric/pull/2166) by [ksylvan](https://github.com/ksylvan): feat: add Claude Opus 5 support and refresh dependencies
