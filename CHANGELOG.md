@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.4.462 (2026-07-28)
+
+### PR [#2123](https://github.com/danielmiessler/Fabric/pull/2123) by [ksylvan](https://github.com/ksylvan) and [OdinKral](https://github.com/OdinKral): fix: block path traversal in pattern name lookup
+
+- **Security Fix:** Blocked path traversal attacks in pattern name lookup (closes #2094) — pattern names containing `..` could previously escape the patterns directory and read arbitrary files via `filepath.Join`; a guard has been added at the top of `getFromDB`, an i18n key `pattern_invalid_name` has been added to all 11 locale files, and test cases now cover all common traversal variants.
+- New translations for the "invalid pattern" user-facing string.
+
 ## v1.4.461 (2026-07-28)
 
 ### PR [#2152](https://github.com/danielmiessler/Fabric/pull/2152) by [AUTHENSOR](https://github.com/AUTHENSOR): fix: shell-escape extension values to prevent command injection
