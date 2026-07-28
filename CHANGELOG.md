@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.4.463 (2026-07-28)
+
+### PR [#2168](https://github.com/danielmiessler/Fabric/pull/2168) by [ksylvan](https://github.com/ksylvan): fix: complete localized setup and error messages for supported locales
+
+- Fix: complete localized setup and error messages across supported locales
+- Translate Bedrock setup prompts across nine supported locales
+- Localize datetime and system template errors consistently
+- Translate Persian Spotify errors and setup guidance
+- Correct Japanese and Polish file operation log labels
+
 ## v1.4.462 (2026-07-28)
 
 ### PR [#2123](https://github.com/danielmiessler/Fabric/pull/2123) by [ksylvan](https://github.com/ksylvan) and [OdinKral](https://github.com/OdinKral): fix: block path traversal in pattern name lookup
