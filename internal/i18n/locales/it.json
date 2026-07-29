@@ -492,7 +492,7 @@
   "prefer_playlist_over_video": "Preferisci playlist al video se entrambi gli ID sono presenti nell'URL",
   "print_context": "Stampa contesto",
   "print_current_version": "Stampa versione corrente",
-  "print_metadata_to_stderr": "Stampa i metadati su stderr",
+  "print_metadata_to_stderr": "Stampa i metadati (token di input/output) su stderr",
   "print_pattern_contents": "Stampa il contenuto del pattern indicato nel terminale",
   "print_session": "Stampa sessione",
   "register_new_extension": "Registra una nuova estensione dal percorso del file di configurazione",

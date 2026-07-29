@@ -5,3 +5,4 @@
 - Enable filtered file suggestions for supported path options
 - Add Spotify, transcription, metadata, and wire-debug completion options
 - Include Grok among providers supporting web search completion
+- Keep the input/output token detail in the show-metadata description

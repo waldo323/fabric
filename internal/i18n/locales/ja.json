@@ -492,7 +492,7 @@
   "prefer_playlist_over_video": "URLに両方のIDが存在する場合、動画よりプレイリストを優先",
   "print_context": "コンテキストを出力",
   "print_current_version": "現在のバージョンを出力",
-  "print_metadata_to_stderr": "メタデータを stderr に出力",
+  "print_metadata_to_stderr": "メタデータ（入力/出力トークン）を stderr に出力",
   "print_pattern_contents": "指定したパターンの内容をターミナルに出力",
   "print_session": "セッションを出力",
   "register_new_extension": "設定ファイルパスから新しい拡張機能を登録",

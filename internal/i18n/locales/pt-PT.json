@@ -492,7 +492,7 @@
   "prefer_playlist_over_video": "Preferir playlist ao vídeo se ambos os IDs estiverem presentes na URL",
   "print_context": "Imprimir contexto",
   "print_current_version": "Imprimir versão atual",
-  "print_metadata_to_stderr": "Imprimir metadados no stderr",
+  "print_metadata_to_stderr": "Imprimir metadados (tokens de entrada/saída) no stderr",
   "print_pattern_contents": "Imprimir o conteúdo do padrão indicado no terminal",
   "print_session": "Imprimir sessão",
   "register_new_extension": "Registar uma nova extensão do caminho do ficheiro de configuração",

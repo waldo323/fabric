@@ -492,7 +492,7 @@
   "prefer_playlist_over_video": "Préférer la liste de lecture à la vidéo si les deux IDs sont présents dans l'URL",
   "print_context": "Afficher le contexte",
   "print_current_version": "Afficher la version actuelle",
-  "print_metadata_to_stderr": "Afficher les métadonnées sur stderr",
+  "print_metadata_to_stderr": "Afficher les métadonnées (jetons d'entrée/sortie) sur stderr",
   "print_pattern_contents": "Afficher le contenu du motif indiqué dans le terminal",
   "print_session": "Afficher la session",
   "register_new_extension": "Enregistrer une nouvelle extension depuis le chemin du fichier de configuration",

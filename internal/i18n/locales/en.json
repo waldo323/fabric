@@ -492,7 +492,7 @@
   "prefer_playlist_over_video": "Prefer playlist over video if both ids are present in the URL",
   "print_context": "Print context",
   "print_current_version": "Print current version",
-  "print_metadata_to_stderr": "Print metadata to stderr",
+  "print_metadata_to_stderr": "Print metadata (input/output tokens) to stderr",
   "print_pattern_contents": "Print the contents of the named pattern to the terminal",
   "print_session": "Print session",
   "register_new_extension": "Register a new extension from config file path",

@@ -492,7 +492,7 @@
   "prefer_playlist_over_video": "Playlist gegenüber Video bevorzugen, wenn beide IDs in der URL vorhanden sind",
   "print_context": "Kontext ausgeben",
   "print_current_version": "Aktuelle Version ausgeben",
-  "print_metadata_to_stderr": "Metadaten auf stderr ausgeben",
+  "print_metadata_to_stderr": "Metadaten (Eingabe-/Ausgabe-Token) auf stderr ausgeben",
   "print_pattern_contents": "Den Inhalt des angegebenen Musters im Terminal ausgeben",
   "print_session": "Sitzung ausgeben",
   "register_new_extension": "Neue Erweiterung aus Konfigurationsdateipfad registrieren",

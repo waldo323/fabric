@@ -745,7 +745,7 @@ Application Options:
       --notification-command=       Custom command to run for notifications (overrides built-in notifications)
       --thinking=                   Set reasoning/thinking level (e.g., off, low, medium, high, or numeric
                                     tokens for Anthropic or Google Gemini)
-      --show-metadata               Print metadata to stderr
+      --show-metadata               Print metadata (input/output tokens) to stderr
       --debug=                      Set debug level (0=off, 1=basic, 2=detailed, 3=trace, 4=wire)
 
 Help Options:

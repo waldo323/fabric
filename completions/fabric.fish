@@ -153,7 +153,7 @@ function __fabric_register_completions
         complete -c $cmd -l disable-responses-api -d "Disable OpenAI Responses API (default: false)"
         complete -c $cmd -l split-media-file -d "Split audio/video files larger than 25MB using ffmpeg"
         complete -c $cmd -l notification -d "Send desktop notification when command completes"
-        complete -c $cmd -l show-metadata -d "Print metadata to stderr"
+        complete -c $cmd -l show-metadata -d "Print metadata (input/output tokens) to stderr"
         complete -c $cmd -s h -l help -d "Show this help message"
 end
 
