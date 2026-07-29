@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.465 (2026-07-29)
+
+### PR [#2180](https://github.com/danielmiessler/Fabric/pull/2180) by [ksylvan](https://github.com/ksylvan): fix: include Grok in localized --search help text
+
+- Fix: Updated all 11 locale entries in the i18n message catalog to include "Grok" in the `enable_web_search_tool` help text, ensuring Grok (xAI) web search support is discoverable via `fabric --help`. Also updates the generated README help block to match. No functional change.
+
 ## v1.4.464 (2026-07-29)
 
 ### PR [#2179](https://github.com/danielmiessler/Fabric/pull/2179) by [ksylvan](https://github.com/ksylvan): fix: declare completion arguments and synchronize CLI help
