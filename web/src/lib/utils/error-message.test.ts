@@ -5,7 +5,8 @@ describe('formatErrorMessage', () => {
   // The server sends 'Error: could not get pattern write_essay: missing
   // required variable: author_name'. The reader must not see the word twice.
   it('keeps one Error word when the text already starts with it', () => {
-    const serverText = 'Error: could not get pattern write_essay: missing required variable: author_name';
+    const serverText =
+      'Error: could not get pattern write_essay: missing required variable: author_name';
 
     expect(formatErrorMessage(new Error(serverText))).toBe(serverText);
   });
