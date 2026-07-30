@@ -1,3 +1,6 @@
-### PR [#2178](https://github.com/danielmiessler/Fabric/pull/2178) by [OdinKral](https://github.com/OdinKral): feat(patterns): add generate_frontmatter for PKM/Obsidian users
+### PR [#2178](https://github.com/danielmiessler/Fabric/pull/2178) by [OdinKral](https://github.com/OdinKral) and [ksylvan](https://github.com/ksylvan): feat(patterns): add generate_frontmatter for PKM/Obsidian users
 
-- Adds a new `generate_frontmatter` pattern that produces clean, paste-ready YAML frontmatter — including title, aliases, tags, type, author, source, date, summary, and status fields — from any text input, designed for PKM systems such as Obsidian and Logseq.
+- Add `generate_frontmatter` to conversion, extraction, and writing categories
+- Document PKM-ready YAML metadata fields in pattern explanations
+- Register pattern descriptions and extracts for suggestion workflows
+- Credit both contributors in incoming changelog entry
