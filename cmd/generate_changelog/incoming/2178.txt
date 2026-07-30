@@ -1,6 +1,0 @@
-### PR [#2178](https://github.com/danielmiessler/Fabric/pull/2178) by [OdinKral](https://github.com/OdinKral) and [ksylvan](https://github.com/ksylvan): feat(patterns): add generate_frontmatter for PKM/Obsidian users
-
-- Add `generate_frontmatter` to conversion, extraction, and writing categories
-- Document PKM-ready YAML metadata fields in pattern explanations
-- Register pattern descriptions and extracts for suggestion workflows
-- Credit both contributors in incoming changelog entry
