@@ -1,4 +1,4 @@
-### PR [#2116](https://github.com/danielmiessler/Fabric/pull/2116) by [dependabot[bot][bot]](https://github.com/apps/dependabot): fix(web): repair the chat page and modernize the build toolchain
+### PR [#2116](https://github.com/danielmiessler/Fabric/pull/2116) by [ksylvan](https://github.com/ksylvan) and [dependabot](https://github.com/apps/dependabot): fix(web): repair the chat page and modernize the build toolchain
 
 - Modernized the web stack by upgrading Tailwind, Skeleton, SvelteKit, Vite, and supporting dependencies.
 - Replaced removed Skeleton components with compatible local implementations to restore UI functionality.
