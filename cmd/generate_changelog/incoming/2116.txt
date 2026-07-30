@@ -1,15 +1,7 @@
-### PR [#2116](https://github.com/danielmiessler/Fabric/pull/2116) by [dependabot[bot][bot]](https://github.com/apps/dependabot): chore(deps): bump the npm_and_yarn group across 1 directory with 2 updates
+### PR [#2116](https://github.com/danielmiessler/Fabric/pull/2116) by [dependabot[bot][bot]](https://github.com/apps/dependabot): fix(web): repair the chat page and modernize the build toolchain
 
-- Feat: modernize web stack and harden chat error handling
-
-- Upgrade Tailwind, Skeleton, SvelteKit, Vite, and supporting dependencies.
-- Replace removed Skeleton components with compatible local implementations.
-
-- Report pre-stream chat failures without duplicating streamed errors.
-- Return empty model arrays and skip malformed vendor lists.
-
-- Prevent stream completion crashes and normalize displayed error messages.
-- Stack toasts correctly and add warning notification support.
-
-- Restore linting, formatting, testing, and pnpm override configuration.
-- Preserve custom themes through Tailwind CSS-based configuration migration.
+- Modernized the web stack by upgrading Tailwind, Skeleton, SvelteKit, Vite, and supporting dependencies.
+- Replaced removed Skeleton components with compatible local implementations to restore UI functionality.
+- Improved pre-stream chat error reporting to prevent duplication of streamed errors, and hardened vendor list parsing to return empty model arrays on malformed input.
+- Fixed stream completion crashes, normalized displayed error messages, corrected toast stacking order, and added warning notification support.
+- Restored linting, formatting, testing, and pnpm override configuration, and preserved custom themes through the Tailwind CSS-based configuration migration.
