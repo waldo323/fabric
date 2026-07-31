@@ -1,5 +1,39 @@
 # Changelog
 
+## v1.4.466 (2026-07-30)
+
+### PR [#2116](https://github.com/danielmiessler/Fabric/pull/2116) by [ksylvan](https://github.com/ksylvan) and [dependabot](https://github.com/apps/dependabot): fix(web): repair the chat page and modernize the build toolchain
+
+- Modernized the web stack by upgrading Tailwind, Skeleton, SvelteKit, Vite, and supporting dependencies.
+- Replaced removed Skeleton components with compatible local implementations to restore UI functionality.
+- Improved pre-stream chat error reporting to prevent duplication of streamed errors, and hardened vendor list parsing to return empty model arrays on malformed input.
+- Fixed stream completion crashes, normalized displayed error messages, corrected toast stacking order, and added warning notification support.
+- Restored linting, formatting, testing, and pnpm override configuration, and preserved custom themes through the Tailwind CSS-based configuration migration.
+
+### PR [#2178](https://github.com/danielmiessler/Fabric/pull/2178) by [OdinKral](https://github.com/OdinKral) and [ksylvan](https://github.com/ksylvan): feat(patterns): add generate_frontmatter for PKM/Obsidian users
+
+- Add `generate_frontmatter` to conversion, extraction, and writing categories
+- Document PKM-ready YAML metadata fields in pattern explanations
+- Register pattern descriptions and extracts for suggestion workflows
+- Credit both contributors in incoming changelog entry
+
+## v1.4.465 (2026-07-29)
+
+### PR [#2180](https://github.com/danielmiessler/Fabric/pull/2180) by [ksylvan](https://github.com/ksylvan): fix: include Grok in localized --search help text
+
+- Fix: Updated all 11 locale entries in the i18n message catalog to include "Grok" in the `enable_web_search_tool` help text, ensuring Grok (xAI) web search support is discoverable via `fabric --help`. Also updates the generated README help block to match. No functional change.
+
+## v1.4.464 (2026-07-29)
+
+### PR [#2179](https://github.com/danielmiessler/Fabric/pull/2179) by [ksylvan](https://github.com/ksylvan): fix: declare completion arguments and synchronize CLI help
+
+- Fix: declare completion arguments and synchronize CLI help
+- Declare Fish completion arguments for dynamic and fixed values
+- Enable filtered file suggestions for supported path options
+- Add Spotify, transcription, metadata, and wire-debug completion options
+- Include Grok among providers supporting web search completion
+- Keep the input/output token detail in the show-metadata description
+
 ## v1.4.463 (2026-07-28)
 
 ### PR [#2168](https://github.com/danielmiessler/Fabric/pull/2168) by [ksylvan](https://github.com/ksylvan): fix: complete localized setup and error messages for supported locales
