@@ -1,0 +1,7 @@
+### PR [#2185](https://github.com/danielmiessler/Fabric/pull/2185) by [ksylvan](https://github.com/ksylvan): feat(web): replace PDF.js pipeline with pdf-inspector WASM worker
+
+- Replaced the PDF.js processing pipeline with the new `pdf-inspector.worker.ts`, backed by `@firecrawl/pdf-inspector-wasm`. The worker initializes WASM one time and processes transferred ArrayBuffers.
+- Added worker error handling. A worker crash now rejects all pending requests with a clear error and terminates the worker. The next request starts a new worker.
+- Fixed the file attachment behavior. The app now parses each file and stores its content without a chat request. One submit sends exactly one `streamChat` call, not one call for each attached file.
+- Removed the legacy PDF dependency chain: `pdf-to-markdown-core`, `pdfjs-dist`, `pdf-config.ts`, and the related build configuration. `@firecrawl/pdf-inspector-wasm` is now the only PDF dependency.
+- Simplified the worker boundary in follow-up refactors: merged redundant methods, removed dead code, and inlined a single-use interface. The full test suite continued to pass.
