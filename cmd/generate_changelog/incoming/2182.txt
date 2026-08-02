@@ -1,3 +1,0 @@
-### PR [#2182](https://github.com/danielmiessler/Fabric/pull/2182) by [drawliin](https://github.com/drawliin): fix(ollama): close stream channel on errors
-
-- Fix(ollama): close stream channel on errors
