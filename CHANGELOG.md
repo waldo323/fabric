@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.4.467 (2026-07-31)
+
+### PR [#2171](https://github.com/danielmiessler/Fabric/pull/2171) by [OdinKral](https://github.com/OdinKral): feat(scripts): add pattern/maintenance audit script
+
+- Adds `scripts/audit-patterns.sh`, a dependency-free audit tool for the patterns library that detects thin patterns (under 15 lines), bloated patterns (over 50 KB), stale hardcoded model references, missing `INPUT` sections, i18n key gaps, and shell completion gaps. The script is read-only and exits with code `0` by default, or `1` when run with `--strict` for CI integration.
+
+## v1.4.466 (2026-07-30)
+
+### PR [#2116](https://github.com/danielmiessler/Fabric/pull/2116) by [ksylvan](https://github.com/ksylvan) and [dependabot](https://github.com/apps/dependabot): fix(web): repair the chat page and modernize the build toolchain
+
+- Modernized the web stack by upgrading Tailwind, Skeleton, SvelteKit, Vite, and supporting dependencies.
+- Replaced removed Skeleton components with compatible local implementations to restore UI functionality.
+- Improved pre-stream chat error reporting to prevent duplication of streamed errors, and hardened vendor list parsing to return empty model arrays on malformed input.
+- Fixed stream completion crashes, normalized displayed error messages, corrected toast stacking order, and added warning notification support.
+- Restored linting, formatting, testing, and pnpm override configuration, and preserved custom themes through the Tailwind CSS-based configuration migration.
+
+### PR [#2178](https://github.com/danielmiessler/Fabric/pull/2178) by [OdinKral](https://github.com/OdinKral) and [ksylvan](https://github.com/ksylvan): feat(patterns): add generate_frontmatter for PKM/Obsidian users
+
+- Add `generate_frontmatter` to conversion, extraction, and writing categories
+- Document PKM-ready YAML metadata fields in pattern explanations
+- Register pattern descriptions and extracts for suggestion workflows
+- Credit both contributors in incoming changelog entry
+
 ## v1.4.465 (2026-07-29)
 
 ### PR [#2180](https://github.com/danielmiessler/Fabric/pull/2180) by [ksylvan](https://github.com/ksylvan): fix: include Grok in localized --search help text
