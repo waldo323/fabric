@@ -84,6 +84,7 @@
 
   async function handleFileUpload(e: Event) {
   uploadedFiles = []; // Clear uploadedFiles at the beginning
+  isFileIndicatorVisible = false;
   if (!files || files.length === 0) return;
 
   if (uploadedFiles.length >= 5 || (uploadedFiles.length + files.length) > 5) {
@@ -105,6 +106,7 @@
       const content = await readFileContent(file, pdfService, toastStore.warning);
       fileContents.push(content);
       uploadedFiles = [...uploadedFiles, file.name];
+      isFileIndicatorVisible = true;
       
       // Update processing status per file
       messageStore.update(messages => {
@@ -235,6 +237,7 @@
     const contentsForProcessing = [...fileContents];
     uploadedFiles = [];
     fileContents = [];
+    isFileIndicatorVisible = false;
     fileButtonKey = !fileButtonKey;
 
     // If the message contains YouTube URLs, replace them with transcripts

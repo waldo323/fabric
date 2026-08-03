@@ -53,4 +53,13 @@ describe('ChatInput chat boundary', () => {
   it('sends through exactly one streamChat call, in handleSubmit', () => {
     expect(source.match(/\.streamChat\(/g) ?? []).toHaveLength(1);
   });
+
+  it('shows the attachment indicator after processing and hides it after submit', () => {
+    expect(source).toMatch(
+      /uploadedFiles = \[\.\.\.uploadedFiles, file\.name\];\s*isFileIndicatorVisible = true;/
+    );
+    expect(source).toMatch(
+      /uploadedFiles = \[\];\s*fileContents = \[\];\s*isFileIndicatorVisible = false;/
+    );
+  });
 });
