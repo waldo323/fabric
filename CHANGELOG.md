@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.4.470 (2026-08-04)
+
+### PR [#2186](https://github.com/danielmiessler/Fabric/pull/2186) by [giodamelio](https://github.com/giodamelio): Update Nixpkgs version for newer Go version
+
+- Updated the Nixpkgs version to provide a Go release that satisfies the `go.mod` requirement of Go >= 1.26.0, as the previously pinned Nixpkgs only shipped Go 1.25.4.
+
 ## v1.4.469 (2026-08-03)
 
 ### PR [#2185](https://github.com/danielmiessler/Fabric/pull/2185) by [ksylvan](https://github.com/ksylvan): feat(web): replace PDF.js pipeline with pdf-inspector WASM worker

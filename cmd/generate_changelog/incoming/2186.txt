@@ -1,3 +1,0 @@
-### PR [#2186](https://github.com/danielmiessler/Fabric/pull/2186) by [giodamelio](https://github.com/giodamelio): Update Nixpkgs version for newer Go version
-
-- Updated the Nixpkgs version to provide a Go release that satisfies the `go.mod` requirement of Go >= 1.26.0, as the previously pinned Nixpkgs only shipped Go 1.25.4.
